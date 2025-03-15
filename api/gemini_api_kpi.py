@@ -3,9 +3,9 @@ from google.genai import types
 import pathlib
 import httpx
 
-client = genai.Client(api_key="YOUR_API_KEY")
+client = genai.Client(api_key="AIzaSyCoDA-zItxAAzQmAN_-kdKCEKc2lNDoTb8")
 # Retrieve and encode the PDF byte
-filepath = pathlib.Path('./Palantir Q4 2023 Business Update.pdf')
+filepath = pathlib.Path('./pdfs/palantir_q4.pdf')
 
 system_prompt = """You are an expert financial analyst. Your task is to extract specific KPIs and revenue breakdowns from a company's financial report.
 Instructions:
