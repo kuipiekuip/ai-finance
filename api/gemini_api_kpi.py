@@ -3,7 +3,7 @@ from google.genai import types
 import pathlib
 import httpx
 
-client = genai.Client(api_key="AIzaSyCoDA-zItxAAzQmAN_-kdKCEKc2lNDoTb8")
+client = genai.Client(api_key="YOUR_API_KEY")
 # Retrieve and encode the PDF byte
 filepath = pathlib.Path('./Palantir Q4 2023 Business Update.pdf')
 
