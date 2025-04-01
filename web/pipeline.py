@@ -10,6 +10,7 @@ llm = LLM(model="groq/llama-3.3-70b-versatile")
 search_tool = BraveSearchTool()
 company_name = "Palantir"
 # company_name = "ING Bank"
+# company_name = "Tesla"
 
 # Define the search agent
 search_agent = Agent(
@@ -28,7 +29,7 @@ search_task = Task(
     # description=f"Search for {company_name}'s Q1 2024 financial performance and latest stock price.",
     description=f"Search for the document for {company_name}'s Q4 2024 financial performance, it should include important company-specific kpis.",
     agent=search_agent,
-    expected_output="Show me the closest document url in pdf format (e.g .pdf is inside the url), including all important company-specific kpis."
+    expected_output="Please provide the closest document URL in PDF format (i.e., the URL should contain '.pdf' and be accessible). Make sure the document includes all relevant company-specific KPIs. If no direct PDF link is found after a thorough search, kindly share a link that leads to a collection of PDF documents."
 )
 
 # Create a Crew with the agents
